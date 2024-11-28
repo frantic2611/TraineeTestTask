@@ -11,4 +11,3 @@ def greeting(request):
     name = request.GET.get('name')
     message = request.GET.get('message')
     return render(request, 'main/greeting.html', {'name':name,'message':message})
-
