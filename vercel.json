@@ -1,13 +1,13 @@
 {
   "builds": [{
-    "src": "TraineeTestTask/wsgi.py",
+    "src": "TraineeTestTask/asgi.py",
     "use": "@vercel/python",
     "config": { "maxLambdaSize": "30mb", "runtime":  "python3.9"}
   }],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "TraineeTestTask/wsgi.py"
+      "dest": "TraineeTestTask/asgi.py"
     }
   ]
 }
